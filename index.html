@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cifrado DES</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Cifrado DES</h1>
+
+    <div class="main-container">
+        <form id="form-cifrar" onsubmit="sendDataThroughSocket(event)">
+            <label class="label-text">
+                Clave
+            </label>
+            <br>
+            <input class="text-input" type="text" id="clave" name="clave" maxlength="8">
+            <br>
+            <label class="label-text">Mensaje</label>
+            <br>
+            <input type="text" name="mensaje" id="mensaje">
+            <br>
+            <br>
+            <input type="button" class="btn btn-cifrar" onclick="cifrado()" value="Cifrar">
+            <input type="submit" class="btn btn-enviar" value="Enviar">
+        </form>
+        <br>
+        <br>
+        <div class="output-container">
+            <h2 class="output-text">El mensaje cifrado es:</h2>
+            <p id="cifrado-output" class="output-text"></p>
+        </div>
+        <hr>
+        <div class="output-container">
+            <div id="texto-cifrado"></div>
+            <div style="visibility: hidden" id="texto-clave"></div>
+            <input class="btn btn-descargar" type="button" onclick="saveTextAsFile()" value="Descargar el archivo .txt'">
+        </div>
+        <div id="descifrador" class="section">
+            <p class="label-text">
+                Ingrese el archivo a descifrar
+            </p>
+            <input type="file" id="archivoDescifrar" onchange="return Validar()">
+            <br>
+            <br>
+            <input class="btn btn-descifrar" type="button" value="Descifrar" onclick="descifrado()">
+            <div class="output-container" id="texto-descifrado"></div>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div> 
+    <hr>
+    <div class="footer">
+        <p>
+            Rodrigo Esteban Morales Roldan 
+            <br>
+            <br>
+            Github: <a href="https://github.com/Rodes1909"> Rodes1909 </a>
+            <br>
+            María Fernanda Olivares Morales 
+            <br>
+            Github: <a href="">  </a>
+            <br>
+            Grupo 5IV6
+        </p>
+    </div>
+    <script src="js/des.js"></script>
+</body>
+
+</html>
