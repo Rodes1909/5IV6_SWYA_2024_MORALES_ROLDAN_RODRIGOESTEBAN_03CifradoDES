@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.main-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.label-text {
+    font-size: 18px;
+    color: #333;
+}
+
+.text-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #e68a00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d17a00;
+}
+
+.btn-cifrar {
+    background-color: #e68a00;
+}
+
+.btn-enviar {
+    background-color: #e68a00;
+}
+
+.btn-descargar {
+    background-color: #e68a00;
+}
+
+.btn-descifrar {
+    background-color: #e68a00;
+}
+
+.output-container {
+    margin-top: 20px;
+}
+
+.output-text {
+    font-size: 16px;
+    color: #e68a00;
+}
+
+.section {
+    margin-top: 40px;
+}
